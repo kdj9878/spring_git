@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#inputDiv, #textarea{
+	position: absolute;
+	top: 0px;
+	left: 12%;
+	background-color: #ffffff;
+	width: 500px;
+	height: 800px;
+	box-shadow: 3px 3px 3px;
+}
+
+#outputDiv{
+	position: absolute;
+	top:0%;
+	left: 60%;
+}
