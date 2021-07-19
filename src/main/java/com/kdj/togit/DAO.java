@@ -15,15 +15,21 @@ public class DAO {
 	 private SqlSession ss;
 	
 
-	public void insertText(HttpServletRequest request) {
+	public void insertText(HttpServletRequest request, Text t) {
 		// TODO Auto-generated method stub
-		String text = request.getParameter("text");
 		
 		MyMapper mm = ss.getMapper(MyMapper.class);
-		List<Text> list = mm.showText();
-		//mm이 인터페이스에서 온다.
+		mm.insertText(t);
+			
 		
-		request.setAttribute("list", list);
+		//mm이 인터페이스에서 온다.
+	}
+	public void showText(HttpServletRequest request) {
+		MyMapper mm = ss.getMapper(MyMapper.class);
+		List<Text> list = mm.showText();
+		request.setAttribute("list", list.get(0));
+			
+		
 		
 	}
 

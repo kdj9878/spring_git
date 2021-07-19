@@ -6,6 +6,9 @@
 select * from text
 
 </select>
+<insert id="insertText" parameterType="com.kdj.togit.Text">
+insert into text values(#{t_text})
+</insert>
 
 
 

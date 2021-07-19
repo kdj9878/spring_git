@@ -1,17 +1,43 @@
 @charset "UTF-8";
 
-#inputDiv, #textarea{
-	position: absolute;
-	top: 0px;
-	left: 12%;
-	background-color: #ffffff;
+#inputSection{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: row;
+}
+
+#textareaDiv{
+	position:absolute;
+	top:0;
+	left:10%;
+	display: flex;
+	background-color: aqua;	
+	flex-direction: column;
 	width: 500px;
-	height: 800px;
+	height: auto;;
+}
+
+#textarea{
+	width: 500px;
+	height: 600px;
 	box-shadow: 3px 3px 3px;
+	overflow: auto;
+}
+
+
+#buttonId{
+	display: flex;
+	background-color: green;
+	justify-content: center;
 }
 
 #outputDiv{
-	position: absolute;
-	top:0%;
-	left: 60%;
+	display:flex;
+	position: relative;
+	top:0px;
+	left: 50%;
+	width: 500px;
+	height: 600px;
+	background-color: gray;
 }

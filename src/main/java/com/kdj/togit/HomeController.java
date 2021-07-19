@@ -32,11 +32,11 @@ public class HomeController {
 		return "home";
 	}
 	
-	@RequestMapping(value = "/string.test", method = RequestMethod.GET)
-	public String test(HttpServletRequest request) {
+	@RequestMapping(value = "/toResult", method = RequestMethod.GET)
+	public String test(HttpServletRequest request, Text t) {
 		
-		dao.insertText(request);
-		
+		dao.insertText(request, t);
+		dao.showText(request);
 		
 		
 		

@@ -1,24 +1,25 @@
 package com.kdj.togit;
 
 public class Text {
-	private String text;
+	private String t_text;
 	
 	public Text() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Text(String text) {
+	public Text(String t_text) {
 		super();
-		this.text = text;
+		this.t_text = t_text;
 	}
 
-	public String getText() {
-		return text;
+	public String getT_text() {
+		return t_text;
 	}
 
-	public void setText(String text) {
-		this.text = text;
+	public void setT_text(String t_text) {
+		this.t_text = t_text;
 	}
+	
 	
 	
 	

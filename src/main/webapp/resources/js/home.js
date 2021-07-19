@@ -1,14 +1,19 @@
-/**
- * 
- */
-const input = document.getElementById("text");
-const btn = document.getElementById("btn");
-const textarea = document.getElementById("textarea");
-
-$("textarea").on("keyup", function(){
-	alert("what");
+/*$(document).ready(function(){
 	
-})
+	$('.btn').click(function(){
+		const text = $('#textarea').val();
+	$.ajax({
+		url : "/toResult" ,
+		type : "get",
+		
+	})	
+	
+});
+	
+})*/
+
+
+
 
 
 

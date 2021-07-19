@@ -8,7 +8,6 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link href="${path}/resources/css/home.css" rel="stylesheet">
-
 </head>
 <body>
 
@@ -18,20 +17,37 @@
 ${crypto_pw}
 </form> --%>
 
-<div id="inputDiv">
-<textarea id="textarea">
+<section id="inputSection">
+<div id="textareaDiv">
+<textarea id="textarea" onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}">
 
-안녕하세요
+public class Main{
 
+public static void main(String[] args){
+		
+	
+	
+	
+	}
+
+
+}
 </textarea>
+<div id="buttonId">
+<button id="btn" class="btn">변환</button>
+</div>
 </div>
 
-<div id="outputDiv" style="background-color: gray; width: 500px; height: 800px">
-${text}
+<div id="outputDiv">
+${list}
 </div>
+</section>
+
+
 
 
 
 </body>
+<script type="text/javascript" src="${path}/resources/js/jquery.js"></script>
 <script type="text/javascript" src="${path}/resources/js/home.js"></script>
 </html>

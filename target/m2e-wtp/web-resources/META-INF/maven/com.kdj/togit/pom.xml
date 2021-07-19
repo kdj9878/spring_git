@@ -188,13 +188,6 @@
     <version>1.9.13</version>
 </dependency>
 
-<!-- https://mvnrepository.com/artifact/org.webjars.npm/jquery -->
-<!-- 						jquery -->
-<dependency>
-    <groupId>org.webjars.npm</groupId>
-    <artifactId>jquery</artifactId>
-    <version>3.5.1</version>
-</dependency>
 
 		
 		
