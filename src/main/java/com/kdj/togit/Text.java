@@ -1,5 +1,6 @@
 package com.kdj.togit;
 
+
 public class Text {
 	private String t_text;
 	

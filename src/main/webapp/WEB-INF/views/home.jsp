@@ -39,7 +39,10 @@ public static void main(String[] args){
 </div>
 
 <div id="outputDiv">
-${list}
+<c:forEach var="t" items="${list}">
+${t.t_text}	
+</c:forEach>
+
 </div>
 </section>
 

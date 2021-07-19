@@ -1,6 +1,7 @@
 package com.kdj.togit;
 
 import java.security.NoSuchAlgorithmException;
+import org.codehaus.jackson.*;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -32,9 +33,8 @@ public class HomeController {
 		return "home";
 	}
 	
-	@RequestMapping(value = "/toResult", method = RequestMethod.GET)
+	@RequestMapping(value = "/toResult", method = RequestMethod.POST)
 	public String test(HttpServletRequest request, Text t) {
-		
 		dao.insertText(request, t);
 		dao.showText(request);
 		

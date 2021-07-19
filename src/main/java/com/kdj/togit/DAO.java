@@ -24,10 +24,12 @@ public class DAO {
 		
 		//mm이 인터페이스에서 온다.
 	}
+	
 	public void showText(HttpServletRequest request) {
 		MyMapper mm = ss.getMapper(MyMapper.class);
 		List<Text> list = mm.showText();
-		request.setAttribute("list", list.get(0));
+		
+		request.setAttribute("list", list);
 			
 		
 		
