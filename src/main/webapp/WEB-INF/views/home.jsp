@@ -23,12 +23,12 @@ ${crypto_pw}
 
 public class Main{
 
-public static void main(String[] args){
+	public static void main(String[] args){
 		
 	
 	
 	
-	}
+		}
 
 
 }
@@ -39,9 +39,6 @@ public static void main(String[] args){
 </div>
 
 <div id="outputDiv">
-<c:forEach var="t" items="${list}">
-${t.t_text}	
-</c:forEach>
 
 </div>
 </section>
