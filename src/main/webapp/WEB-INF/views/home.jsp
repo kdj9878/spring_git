@@ -10,7 +10,7 @@
 <link href="${path}/resources/css/home.css" rel="stylesheet">
 </head>
 <body>
-
+<main id="main">
 <%-- <form action="create.pw">
 비밀번호 암호화 <input name="pw">
 <button>전송</button>
@@ -35,18 +35,20 @@ public class Main{
 </textarea>
 <div id="buttonId">
 <button id="btn" class="btn">변환</button>
+<form action="secondPage">
+<button>2페이지로</button>
+</form>
 </div>
 </div>
 
-<div id="outputDiv">
+<pre id="output">
 
-</div>
+</pre>
 </section>
 
 
 
-
-
+</main>
 </body>
 <script type="text/javascript" src="${path}/resources/js/jquery.js"></script>
 <script type="text/javascript" src="${path}/resources/js/home.js"></script>
