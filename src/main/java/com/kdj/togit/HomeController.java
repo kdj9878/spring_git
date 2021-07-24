@@ -24,7 +24,7 @@ public class HomeController {
 	public String home() {
 		
 		
-		return "home";
+		return "index";
 	}
 	
 	@RequestMapping(value = "/create.pw", method = RequestMethod.GET)
@@ -32,7 +32,7 @@ public class HomeController {
 		Create.createpw(request);
 		
 		
-		return "home";
+		return "index";
 	}
 	
 	@RequestMapping(value = "/toResult", method = RequestMethod.POST)
@@ -44,7 +44,7 @@ public class HomeController {
 		
 		
 		
-		return "home";
+		return "index";
 	}
 	
 	@RequestMapping(value = "/toResult2", method = RequestMethod.POST)
